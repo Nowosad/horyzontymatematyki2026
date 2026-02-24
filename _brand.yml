@@ -1,0 +1,44 @@
+# _brand.yml
+
+# ---------------------------------
+# Meta
+# ---------------------------------
+
+meta:
+  name:
+    full: Jakub Nowosad
+    short: Nowosad
+  link:
+    home: https://www.jakubnowosad.com
+    github: https://github.com/nowosad
+  description: |
+    Jakub Nowosad is a computational geographer focused on spatial data analysis and visualization.
+
+
+# -----------------------------------
+# Colors
+# -----------------------------------
+color:
+  palette:
+    bckgrd-white: "#fffffd" # almost white, very subtle difference
+    link-blue: "#2F9BC1"
+    link-hover: "#3487a5"
+  background: bckgrd-white  
+  primary: link-blue
+
+# -----------------------------------
+# Typography
+# -----------------------------------
+typography:
+  fonts:
+    - family: Krub
+      source: bunny
+    - family: Lora
+      source: bunny
+    - family: Anonymous Pro
+      source: bunny
+  base: Krub
+  headings: Lora
+  monospace: Anonymous Pro
+  link:
+    decoration: underline

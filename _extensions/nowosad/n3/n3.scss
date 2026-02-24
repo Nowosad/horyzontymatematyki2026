@@ -1,0 +1,160 @@
+/* https://quarto.org/docs/presentations/revealjs/themes.html*/
+
+/*-- scss:defaults --*/
+
+// fonts
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,700,700i);
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
+
+$font-family-sans-serif: "Fira Sans", "Droid Serif", "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif !default;
+$font-family-monospace: "Fira Code", "Lucida Console", Monaco, monospace !default;
+$presentation-font-size-root: 32px;
+$presentation-line-height: 1.5em;
+$presentation-heading-font-weight: 400;
+
+// colors
+$body-bg: #fafafa !default;
+$body-color: #000 !default;
+$selection-bg: #26351c;
+
+/*-- scss:rules --*/
+#title-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white !important;
+
+  h1 {
+    align-self: center;
+    color: white !important;
+    font-size: clamp(96px, 14vw, 180px) !important;
+    text-align: center;
+  }
+
+  .subtitle {
+    align-self: center;
+    color: white !important;
+    font-size: clamp(28px, 4vw, 120px) !important;
+    text-align: center;
+  }
+
+  .quarto-title-authors {
+    align-self: center;
+    justify-content: center;
+    color: white !important;
+    font-size: clamp(28px, 4vw, 32px) !important;
+
+    .quarto-title-author { // optional, test it for yourself
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      font-size: inherit !important;
+    }
+  }
+
+  .quarto-title-affiliation,
+  .quarto-title-date,
+  .date {
+    font-size: clamp(28px, 4vw, 32px) !important;
+  }
+
+}
+
+.reveal .footer a {
+color: #312f1a;
+}
+
+.reveal h2 {
+	background-color: #524d3f;
+	padding: 5px 0px 5px 10px;
+	color: #fafafa;
+	border-radius: 12px;
+
+	&:empty {
+    background-color: transparent !important;
+  }
+}
+
+// https://twitter.com/patscli/status/1582832919323693056
+.vectical-center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+section.slide h1 {
+  color: rgb(255, 255, 255) !important;
+  //font-size: calc(min(8vw, 8vh)) !important; // Adjust these values to change the font size
+  font-size: 200px  !important; // Adjust this value to make the font larger or smaller
+  text-align: right;
+  font-weight: 200;
+  // text-shadow: 5px 5px 0 rgba(1, 1, 1, 1); // Add white shadow
+}
+
+.reveal pre {
+  font-size: 1.8rem !important;
+}
+
+.reveal code {
+  font-size: 0.85em !important;
+}
+
+/*
+.reveal .slide {
+    outline: thick double #B22222;
+}
+*/
+
+.faded-right {
+  opacity: 0.55;           /* make it less prominent */
+  text-align: right;       /* align text to the right */
+  transition: opacity 0.3s ease;
+}
+
+.faded-right:hover {
+  opacity: 1;              /* optional: highlight when hovered */
+}
+
+/* default: overlay not visible (doesn't affect layout) */
+.reveal .slides section .cross-overlay {
+  display: none;              /* hidden until slide is present */
+  position: fixed;            /* fixed to viewport — won't affect slide layout */
+  inset: 0;                   /* top:0; right:0; bottom:0; left:0 */
+  pointer-events: none;       /* allow clicks through overlay */
+  z-index: 9999;              /* sits above slide contents */
+  user-select: none;
+}
+
+/* only show the overlay when this section is the currently shown slide */
+.reveal .slides section.crossed.present .cross-overlay {
+  display: block;
+}
+
+/* draw the two diagonal lines using pseudo-elements of the fixed overlay */
+.reveal .slides section.crossed.present .cross-overlay::before,
+.reveal .slides section.crossed.present .cross-overlay::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  width: 120%;
+  height: 0.9rem;                   /* thickness of the line */
+  background: rgba(200, 0, 0, 0.90);/* red, semi-opaque */
+  transform-origin: center;
+  pointer-events: none;
+  z-index: 9999;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.15));
+}
+
+/* rotations to form the X */
+.reveal .slides section.crossed.present .cross-overlay::before {
+  transform: translateY(-50%) rotate(25deg);
+}
+.reveal .slides section.crossed.present .cross-overlay::after {
+  transform: translateY(-50%) rotate(-25deg);
+}
+

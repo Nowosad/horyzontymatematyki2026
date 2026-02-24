@@ -1,0 +1,71 @@
+---
+title: "Wzorce w przestrzeni"
+subtitle: "*gdzie geografia spotyka matematykę*"
+author: "Jakub Nowosad, <https://jakubnowosad.com/>"
+institute: "Horyzonty Matematyki, Lublin"
+date: "2026-03-26"
+title-slide-attributes:
+  data-background-image: figs/cover.png
+  data-background-size: cover
+  data-background-opacity: "1"
+format:
+  n3-revealjs:
+    footer: "[jakubnowosad.com/horyzontymatematyki2026](https://jakubnowosad.com/horyzontymatematyki2026)"
+    # slide-number: false
+    progress: false
+    margin: 0.05
+    menu: false
+    code-line-numbers: false
+    code-fold: true
+filters:
+  - ripper
+knitr: 
+  opts_chunk: 
+    out-width: 100%
+    fig-align: center
+    fig-height: 9
+# https://artvee.com/dl/river-landscape-40#00    
+# 45 minutes (plus also possible time for questions)    
+---
+
+## Summary
+
+:::: {.columns}
+::: {.column width="50%" .incremental}
+
+- **Understand sampling design**, it affects model training & evaluation  
+- **Align evaluation with prediction context**  
+- **Use prediction-domain adaptive cross-validation** (e.g., kNNDM) for realistic assessment  
+- **Check prediction reliability**, for example, using Area of Applicability (AoA)  
+- **Leverage R tools** for spatial machine learning tasks
+<!-- - Combining domain knowledge with appropriate methods leads to more reliable spatial predictions -->
+
+:::
+::: {.column width="45%" .faded-right}
+<div style="text-align: right">
+### Contact
+
+Website: <https://jakubnowosad.com>
+
+### Resources
+
+Slides: <https://jakubnowosad.com/rome2025>
+
+### Acknowledgments
+
+*Various R developers*
+
+*Contributors to the geocompx project*
+
+*Members of the Remote Sensing and Spatial Modelling Research Group (especially Hanna Meyer and Jan Linnenbrink)*
+<!-- - Participants of the "Advances in Spatial Machine Learning 2025" workshop -->
+
+```{r}
+#| echo: false
+#| out-width: 75%
+#| fig-align: right
+knitr::include_graphics("figs/EN-Funded by the EU-POS.jpg")
+```
+</div>
+:::
+::::
