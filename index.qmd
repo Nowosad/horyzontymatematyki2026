@@ -925,5 +925,12 @@ Strona: <https://jakubnowosad.com>
 Slajdy: <https://jakubnowosad.com/horyzontymatematyki2026>
 
 </div>
+
+```{r}
+#| echo: false
+#| out-width: 75%
+#| fig-align: right
+knitr::include_graphics("figs/EN-Funded by the EU-POS.jpg")
+```
 :::
 ::::
