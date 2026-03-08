@@ -9,8 +9,8 @@
 $font-family-sans-serif: "Fira Sans", "Droid Serif", "Palatino Linotype", "Book Antiqua", Palatino,
   FreeSerif, serif !default;
 $font-family-monospace: "Fira Code", "Lucida Console", Monaco, monospace !default;
-$presentation-font-size-root: 32px;
-$presentation-line-height: 1.5em;
+$presentation-font-size-root: 30px;
+$presentation-line-height: 1.25em;
 $presentation-heading-font-weight: 400;
 
 // colors
@@ -86,13 +86,18 @@ color: #312f1a;
   transform: translateY(-50%);
 }
 
-section.slide h1 {
+// Background image for section divider slides (h1 only)
+.reveal section.has-dark-background h1 {
   color: rgb(255, 255, 255) !important;
-  //font-size: calc(min(8vw, 8vh)) !important; // Adjust these values to change the font size
-  font-size: 200px  !important; // Adjust this value to make the font larger or smaller
+  font-size: 200px  !important;
   text-align: right;
   font-weight: 200;
-  // text-shadow: 5px 5px 0 rgba(1, 1, 1, 1); // Add white shadow
+}
+
+// Alternative: use data-background attribute on slides
+.reveal .slide-background {
+  background-size: cover;
+  background-position: center;
 }
 
 .reveal pre {
