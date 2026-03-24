@@ -727,7 +727,7 @@ tmc
 :::
 ::: {.column width='65%'}
 
-*macierz współwystępowania**:
+**macierz współwystępowania**:
 ```{r}
 coma1 = comat::get_coma(as.matrix(landscapes[[1]], wide = TRUE))
 colnames(coma1) = c("rolnictwo", "las")
