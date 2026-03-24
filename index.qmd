@@ -58,67 +58,47 @@ knitr::include_graphics("figs/history-babylonian.jpg")
 Starożytna Grecja: 
 *Rekonstrukcja świata z opisów Herodota (V wiek p.n.e.)*
 ```{r}
-#| out-width: 82%
+#| out-width: 45%
 #| fig-cap: "<https://pl.wikipedia.org/wiki/Herodot>"
 knitr::include_graphics("figs/historia-herodot.png")
 ```
-:::
-::::
-
 ```{r}
-#| out-width: 82%
+#| out-width: 75%
 #| fig-cap: "<https://en.wikipedia.org/wiki/Age_of_Discovery>"
 knitr::include_graphics("figs/historia-Age_of_Discovery_explorations_in_English.png")
 ```
-
-Geografia zaczynała jako opis i odkrywanie świata; z czasem coraz bardziej przesuwała się w stronę systematycznej wiedzy o zróżnicowaniu przestrzennym.
-
-## Geografia: profesjonalizacja i instytucje
-
-:::: {.columns}
-::: {.column width="50%"}
-```{r}
-#| out-width: 40%
-#| fig-cap: "Chronometr H4, © National Maritime Museum, Greenwich, London"
-knitr::include_graphics("figs/history-h4.jpg")
-```
-```{r}
-#| fig-cap: "Thomas Luny, HMB Endeavour (statek Jamesa Cooka)"
-knitr::include_graphics("figs/history-cook.jpg")
-```
-:::
-::: {.column width="50%"}
-Zapotrzebowanie na wiedzę geograficzną wzrastało, co wymagało przygotowania nauczycieli, instytucji i nowych metod opisu świata.
-```{r}
-#| fig-cap: "Lekcja geografii (koniec XIX wieku, Kijów), <https://www.encyclopediaofukraine.com>"
-knitr::include_graphics("figs/history-lesson.jpg")
-```
 :::
 ::::
 
-::::{.columns}
-::: {.column width="40%"}
+<!-- Geografia zaczynała jako opis i odkrywanie świata; z czasem coraz bardziej przesuwała się w stronę systematycznej wiedzy o zróżnicowaniu przestrzennym. -->
+
+## Geografia: profesjonalizacja i instytucje
+
+Zapotrzebowanie na wiedzę geograficzną wzrastało, co wymagało przygotowania nauczycieli, instytucji i nowych metod opisu świata.
+
+:::: {.columns}
+::: {.column width="30%"}
 ```{r}
-#| out-width: 40%
+#| out-width: 30%
 #| fig-cap: "Royal Geographical Society (1830)"
 knitr::include_graphics("figs/history-rgs.png")
 ```
 ```{r}
-#| out-width: 60%
-#| fig-cap: "International Geographical Union (1871/1922)"
-knitr::include_graphics("figs/history-igu.png")
+#| out-width: 100%
+#| fig-cap: "Lekcja geografii (koniec XIX wieku, Kijów), <https://www.encyclopediaofukraine.com>"
+knitr::include_graphics("figs/history-lesson.jpg")
 ```
 :::
-::: {.column width="60%"}
+::: {.column width="65%"}
 ```{r}
-#| out-width: 95%
+#| out-width: 100%
 #| fig-cap: "Wyprawa Amundsena na biegun południowy (1911)"
 knitr::include_graphics("figs/history-pole.jpg")
 ```
 :::
 ::::
 
-Geografia staje się zinstytucjonalizowaną dyscypliną: szkolną, akademicką i badawczą.
+<!-- Geografia staje się zinstytucjonalizowaną dyscypliną: szkolną, akademicką i badawczą. -->
 
 ## Kryzys tożsamości geografii
 
@@ -127,15 +107,16 @@ Geografia staje się zinstytucjonalizowaną dyscypliną: szkolną, akademicką i
 - Rozdział między geografami fizycznymi (środowisko) a geografami człowieka/społeczno-ekonomicznymi (społeczeństwo)
 
 :::: {.columns}
-::: {.column width="50%"}
-Inne:
+::: {.column width="35%" .fragment}
+<br><br><br><br><br><br><br><br><br>
+*Inne:*
 
-- Zróżnicowanie geograficzne geografii
-- Rozdrobnienie i specjalizacja
-- Coraz większa rozbieżność między geografią szkolną a akademicką
+- *Zróżnicowanie geograficzne geografii*
+- *Rozdrobnienie i specjalizacja*
+- *Coraz większa rozbieżność między geografią szkolną a akademicką*
 
 :::
-::: {.column width="50%"}
+::: {.column width="65%"}
 ```{r}
 knitr::include_graphics("figs/egg2.gif")
 ```
@@ -144,27 +125,36 @@ knitr::include_graphics("figs/egg2.gif")
 
 ## Współczesna geografia
 
-:::: {.columns}
-::: {.column width="55%"}
 Geografia dziś nie polega na zapamiętywaniu nazw i lokalizacji, ani na tworzeniu map.
 
 Jej celem jest rozumienie **zjawisk przestrzennych**: tego, **co** znajduje się **gdzie**, **dlaczego właśnie tam** i **jak to się zmienia**.
 
+```{r}
+#| out-width: 110%
+knitr::include_graphics("figs/ib-landscape.jpeg")
+```
+
+:::: {.columns}
+::: {.column width="55%"}
+**Przykładowe współczesne kierunki badań:**
+
+- modelowanie zmian klimatu i bioróżnorodności
+- analiza miast i mobilności
+- teledetekcja satelitarna i monitorowanie środowiska
+
+:::
+::: {.column width="45%"}
 ::: {.incremental}
+Geografia:
+
 - stawia pytania badawcze i testuje hipotezy
 - korzysta z danych terenowych, satelitarnych i społecznych
 - używa metod ilościowych, modeli i algorytmów
 - coraz silniej łączy geografię z fizyką, chemią, **matematyką**, statystyką i informatyką
 :::
 :::
-::: {.column width="45%"}
-**Przykładowe współczesne kierunki badań:**
-
-- modelowanie zmian klimatu i bioróżnorodności
-- analiza miast i mobilności
-- teledetekcja satelitarna i monitorowanie środowiska
-:::
 ::::
+
 
 # Dane przestrzenne {data-background-image="figs/cover.png" data-background-opacity="0.3"}
 
@@ -173,15 +163,12 @@ Jej celem jest rozumienie **zjawisk przestrzennych**: tego, **co** znajduje się
 :::: {.columns}
 ::: {.column width="30%"}
 ```{r}
+#| fig-cap: "[https://www.esa.int](https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/New_weather_satellite_reveals_spectacular_images_of_Earth); <http://zbip-lwem.home.amu.edu.pl/>"
 #| fig-align: center
-#| out-width: 90%
+#| out-width: 80%
 knitr::include_graphics("figs/history-first.jpg")
 ```
-::: aside
-[https://www.esa.int](https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/New_weather_satellite_reveals_spectacular_images_of_Earth)
 
-<http://zbip-lwem.home.amu.edu.pl/>
-:::
 :::
 ::: {.column width="70%"}
 ```{r}
@@ -206,41 +193,42 @@ Współczesna geografia korzysta z bardzo różnych źródeł danych — od obse
 ::: {.column width="50%"}
 ```{r}
 #| fig-align: center
-#| out-width: 70%
+#| out-width: 60%
 knitr::include_graphics("figs/data-sen1.jpg")
 ```
-Misje satelitarne: Landsat, MODIS, Sentinel, itd.
+*Misje satelitarne:* Landsat, MODIS, Sentinel, itd.
 
-Typ misji: publiczna/komercyjna
+*Typ misji:* publiczna/komercyjna
 
-Typ sensora: pasywny/aktywny
+*Typ sensora:* pasywny/aktywny
 
-Typ danych: optyczne/radarowe, itd.
+*Typ danych:* optyczne/radarowe, itd.
 
-Rozdzielczość: przestrzenna/czasowa/spektralna
+*Rozdzielczość:* przestrzenna/czasowa/spektralna
 :::
 ::: {.column width="50%"}
 ```{r}
 #| fig-align: center
-#| out-width: 60%
+#| out-width: 55%
 knitr::include_graphics("figs/data-sen2.jpg")
 ```
 ```{r}
 #| fig-cap: "<https://en.wikipedia.org/wiki/Sentinel-1>, <https://en.wikipedia.org/wiki/Sentinel-2>"
 #| fig-align: center
-#| out-width: 60%
+#| out-width: 55%
 knitr::include_graphics("figs/data-sen3.jpg")
 ```
 :::
 ::::
 
-Teledetekcja daje ogromny zasięg i regularność obserwacji, ale zwykle mierzy **proxy** zjawisk, a nie samo zjawisko bezpośrednio.
-
+*Teledetekcja daje wiele możliwości, ale zwykle mierzy **proxy** zjawisk, a nie samo zjawisko bezpośrednio.*
 
 ## Teledetekcja
 
 ::: {.r-stack}
 ![](figs/tm1.png){width="1500"}
+
+![](figs/tm2.png){.fragment width="1500"}
 
 ![](figs/tm3.png){.fragment width="1500"}
 :::
@@ -253,40 +241,34 @@ Bezpośrednio obserwujemy sygnał (np. odbicie promieniowania), z którego dopie
 - Tradycyjne pomiary terenowe (uwzględniające lokalizację): pomiary jakości wody, powietrza, gleby, itd.
 - Sieci monitoringowe
 - Eksperymenty naukowe
-- Dane terenowe są droższe i trudniejsze do zebrania, ale często pozostają niezastąpione jako pomiar bezpośredni i punkt odniesienia dla danych zdalnych.
-:::
-::: {.column width="68%"}
+
 ```{r}
 #| fig-cap: "CLIMPEAT project (fot. Jan Barabach)"
 #| out-width: 88%
 knitr::include_graphics("figs/data-climpeat.jpg")
 ```
 
+:::
+::: {.column width="68%"}
+*fot. Maurycy Żarczyński*
 ```{r}
 #| fig-align: center
-#| out-width: 88%
+#| out-width: 100%
 knitr::include_graphics("figs/rdzen LAZ10-09 - osady warwowe - jezioro Łazduny - poj. mazurskie - okolice Orzysza.JPG")
 ```
 
-:::: {.columns}
-::: {.column width="50%"}
 ```{r}
 #| fig-align: center
-#| out-width: 85%
+#| out-width: 100%
+#| layout-ncol: 2
 knitr::include_graphics("figs/limnologia zimą - Jezioro Żabińskie - mazury - okolice giżycka.jpg")
-```
-:::
-::: {.column width="50%"}
-```{r}
-#| fig-cap: "fot. Maurycy Żarczyński"
-#| fig-align: center
-#| out-width: 85%
 knitr::include_graphics("figs/akceleratorowa spektrometria masowa (AMS) - datowanie 14c - NAU - Flagstaff - podobny w Gliwicach, starszy w Poznaniu.jpg")
 ```
+
 :::
 ::::
-:::
-::::
+
+*Dane terenowe są droższe i trudniejsze do zebrania, ale często pozostają niezastąpione jako pomiar bezpośredni i punkt odniesienia dla danych zdalnych.*
 
 ## Inne źródła danych przestrzennych
 
@@ -303,14 +285,15 @@ knitr::include_graphics("figs/akceleratorowa spektrometria masowa (AMS) - datowa
 :::
 ::: {.column width="50%"}
 ```{r}
-#| out-width: 90%
+#| out-width: 60%
 #| fig-cap: "<https://luukvdmeer.github.io/sfnetworks>"
 knitr::include_graphics("figs/sfnetwork.png")
 ```
 :::
 ::::
 
-W praktyce analizy geograficzne często łączą wiele źródeł danych, bo każde z nich opisuje inny aspekt rzeczywistości i ma inne ograniczenia.
+*W praktyce analizy geograficzne często łączą wiele źródeł danych, bo każde z nich opisuje inny aspekt rzeczywistości i ma inne ograniczenia.*
+
 
 # Spatial is special (?) {data-background-image="figs/cover.png" data-background-opacity="0.3"}
 
@@ -319,6 +302,13 @@ W praktyce analizy geograficzne często łączą wiele źródeł danych, bo każ
 - **Lokalizacja**: Każdy obiekt powiązany z określoną lokalizacją na powierzchni Ziemi
 - **Relacje przestrzenne**: Sąsiedztwo, odległość, topologia
 - **Wielowymiarowość**: 2D, 3D, 4D (przestrzeń + czas)
+
+```{r}
+#| out-width: 90%
+#| fig-align: center
+#| fig-cap: "<https://tmap.geocompx.org/>"
+knitr::include_graphics("figs/fig-vector-data-cubes-1.png")
+```
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -331,9 +321,9 @@ W danych przestrzennych położenie i relacje między obiektami są częścią i
 **Specyficzne wyzwania:**
 
 - Złamanie założenia niezależności
-- MAUP (Modifiable Areal Unit Problem)
-- Heterogeniczność przestrzenna
+- MAUP (ang. *Modifiable Areal Unit Problem*)
 - Autokorelacja przestrzenna
+- Heterogeniczność przestrzenna
 :::
 ::::
 
@@ -343,17 +333,6 @@ W danych przestrzennych położenie i relacje między obiektami są częścią i
 
 *"Autocorrelation may be found in the data also due to, for example, omitted variables or inappropriate levels of aggregation"* (Pebesma and Bivand, 2023)
 
-
-:::: {.columns}
-::: {.column width="50%"}
-<!-- Matematycznie: $P(A|B) \neq P(A)$ dla sąsiednich lokalizacji. -->
-
-Klasyczne metody statystyczne zakładają niezależność obserwacji. **W danych przestrzennych to założenie jest niemal zawsze łamane.**
-
-Bliskość przestrzenna zmienia więc rozkład informacji: obserwacje z sąsiednich lokalizacji są często bardziej podobne niż obserwacje odległe.
-
-:::
-::: {.column width="50%"}
 ```{r}
 #| echo: false
 #| fig-align: center
@@ -382,15 +361,20 @@ tm_r3 = tm_shape(r3) + tm_raster(col.scale = tm_scale_categorical(values = c("#f
   tm_layout(frame = FALSE)
 tmap_arrange(tm_r2, tm_r1, tm_r3, ncol = 3)
 ```
-:::
-::::
 
-## Problem #2: Niejednorodność przestrzenna
+
+<!-- Matematycznie: $P(A|B) \neq P(A)$ dla sąsiednich lokalizacji. -->
+
+Klasyczne metody statystyczne zakładają niezależność obserwacji. **W danych przestrzennych to założenie jest niemal zawsze łamane.**
+
+Bliskość przestrzenna zmienia więc rozkład informacji: obserwacje z sąsiednich lokalizacji są często bardziej podobne niż obserwacje odległe.
+
+## Problem #2: Heterogeniczność przestrzenna
 
 **Heterogeniczność**: Parametry procesów nie są stałe w przestrzeni.
 
 :::: {.columns}
-::: {.column width="60%"}
+::: {.column width="50%"}
 Ta sama zależność między zmiennymi może wyglądać inaczej w różnych miejscach.
 
 **Przykłady:**
@@ -399,11 +383,18 @@ Ta sama zależność między zmiennymi może wyglądać inaczej w różnych miej
 - zmienna wariancja błędów
 - brak stacjonarności procesu
 
-**Konsekwencja:**
+::: {.fragment}
 
-model dopasowany globalnie może dobrze opisywać średni obraz zjawiska, ale źle działać lokalnie.
+<br><br><br><br><br>
+
+**Konsekwencje:**
+
+model może dobrze opisywać średni obraz zjawiska, ale źle odwzorowywać lokalne wzorce i zależności
+
 :::
-::: {.column width="40%"}
+
+:::
+::: {.column width="50%"}
 ```{r}
 #| echo: false
 #| fig-align: center
@@ -422,7 +413,7 @@ df_het = rbind(
 ggplot(df_het, aes(x = x, y = y, color = region)) +
   geom_point(size = 2) +
   geom_smooth(method = "lm", se = FALSE) +
-  labs(x = "Predyktor", y = "Odpowiedź") +
+  labs(x = "Predyktor", y = "Odpowiedź", color = "") +
   theme_bw(base_size = 18)
 ```
 :::
@@ -439,7 +430,7 @@ knitr::include_graphics("figs/prof.jpg")
 ```
 :::
 ::: {.column width="40%"}
-Ignorowanie autokorelacji i heterogeniczności prowadzi do:
+**Ignorowanie autokorelacji i heterogeniczności prowadzi do:**
 
 - Błędnego oszacowania p-values (często zbyt optymistyczne)
 - Niepoprawnych przedziałów ufności
@@ -454,6 +445,7 @@ Ignorowanie autokorelacji i heterogeniczności prowadzi do:
 *Professor of Statistics (1903), Albert Engström*
 :::
 
+
 # Uczenie maszynowe używając danych przestrzennych {data-background-image="figs/cover.png" data-background-opacity="0.3"}
 
 ## Problem: Mapowanie predykcyjne
@@ -463,7 +455,9 @@ Ignorowanie autokorelacji i heterogeniczności prowadzi do:
 
 Celem jest stworzenie ciągłej mapy na podstawie punktowych obserwacji i predyktorów przestrzennych.
 
+::: aside
 Przykład: przewidywanie bogactwa gatunkowego roślin w Ameryce Południowej.
+:::
 
 :::
 ::: column
@@ -520,81 +514,82 @@ tm_shape(predictors) +
   tm_dots(shape = 2, col = "black", size = 0.2)
 ```
 
-**Problem**: Te metody zakładają niezależność obserwacji: każdy punkt jest traktowany jako niezależny.
+**Problem**: Te metody zakładają niezależność obserwacji -- każdy punkt jest traktowany jako niezależny.
 
-*W praktyce ignorowanie autokorelacji przestrzennej i niereprezentatywności próby prowadzi do nadmiernego dopasowania i błędnych generalizacji.*
+*W praktyce ignorowanie autokorelacji przestrzennej i niereprezentatywności próby prowadzi do nadmiernego dopasowania modelu i błędnych generalizacji.*
 
 ## Rozkład przestrzenny danych
 
 Dane treningowe w badaniach przyrodniczych są często zaagregowane przestrzennie.
 
-- Niektóre obszary daleko od punktów treningowych
+- Niektóre obszary są daleko od punktów treningowych
 - Wartości predyktorów dla opróbowanych lokalizacji mogą drastycznie różnić się od tych dla obszarów, które chcemy prognozować
 
+Dane testowe również skupione przestrzennie –- nie reprezentują całego obszaru, który chcemy prognozować.
+
 :::: columns
-::: column
-```{r}
-#| fig-height: 6
-tm_shape(south_america) +
-  tm_borders() +
-  tm_shape(splotdata) +
-  tm_symbols(fill = "Species_richness", size = 0.5)
-```
+::: {.column width="30%"}
+![](figs/knndm2.png){height="600px"}
 :::
-::: column
+::: {.column width="70%"}
 ```{r}
-#| fig-height: 6
+#| fig-height: 4
 plot(geodist(splotdata, predictors)) +
   scale_x_sqrt(labels = scales::label_number()) + 
   scale_fill_manual(values = c("steelblue", "tomato"), 
                     name = "distance function") +
-  theme_bw(base_size = 24)
+  theme_bw(base_size = 16)
 ```
+<!-- To prowadzi do dwóch różnych pytań: -->
+
+1. **Jak wiarygodnie ocenić model?**
+2. **Gdzie predykcje modelu są wiarygodne?**
 :::
 ::::
 
-Dane testowe również skupione przestrzennie –- nie reprezentują całego obszaru, który chcemy prognozować.
+## Rozwiązanie 1: Walidacja dostosowana do domeny predykcyjnej
 
-To prowadzi do dwóch różnych pytań:
+Standardowa walidacja krzyżowa (*random CV*) daje zbyt optymistyczne wyniki w takich sytuacjach.
 
-1. **Jak wiarygodnie ocenić model?**
-2. **Gdzie predykcje modelu mają w ogóle sens?**
-
-## Rozwiązanie 1: Walidacja przestrzenna
-
-Standardowa walidacja krzyżowa (*random CV*) daje zbyt optymistyczne wyniki.
-
-Alternatywa; **walidacja kNNDM** (*k-fold Nearest Neighbour Distance Matching*):
-
-Dopasowuje podzbiory walidacyjne, aby odległości treningowo-testowe odpowiadały odległościom predykcyjnym.
-
-Jej celem nie jest poprawa samego modelu, ale **bardziej wiarygodna ocena jego jakości** w warunkach zbliżonych do rzeczywistej predykcji.
+> Alternatywa: **walidacja kNNDM** (*k-fold Nearest Neighbour Distance Matching*):
+> 
+> - Dopasowuje podzbiory walidacyjne, aby odległości treningowo-testowe odpowiadały odległościom predykcyjnym.
 
 ::: {.columns}
 ::: {.column width="60%"}
 ```{r}
-#| fig-height: 6
+#| fig-height: 5.5
 #| fig-width: 10
 set.seed(11)
 indices_knndm = knndm(splotdata, predictors, k = 5)
 plot(geodist(splotdata, predictors, cvfolds = indices_knndm$indx_test)) +
   scale_x_sqrt(labels = scales::label_number()) +
-  ggtitle("kNNDM CV: k-fold nearest-neighbour distance matching") +
-  theme_bw(base_size = 24)
+  ggtitle("kNNDM CV") +
+  theme_bw(base_size = 16)
 ```
 :::
 ::: {.column width="40%"}
-![](figs/knndm2.png){height="600px"}
+```{r}
+splotdatak = splotdata
+splotdatak$knndm = factor(indices_knndm$clusters)
+tm_shape(south_america) +
+  tm_borders() +
+  tm_shape(splotdatak) +
+  tm_symbols(fill = "knndm", size = 0.5)
+```
 :::
 ::::
+
+::: aside
+Jej celem nie jest poprawa samego modelu, ale **bardziej wiarygodna ocena jego jakości** w warunkach zbliżonych do rzeczywistej predykcji.
+:::
 
 ## Rozwiązanie 2: Obszar stosowalności 
 
 :::: columns
 ::: column
-Metoda AoA (*Area of Applicability*) pozwala zidentyfikować obszary, dla których model nie posiada odpowiednich danych treningowych, co czyni predykcje mało wiarygodnymi.
+**Metoda AoA** (*Area of Applicability*) pozwala zidentyfikować obszary, dla których model nie posiada odpowiednich danych treningowych, co czyni predykcje mało wiarygodnymi.
 
-AoA nie odpowiada więc na pytanie, **jak dobry jest model**, lecz na pytanie, **gdzie można sensownie ufać jego predykcjom**.
 :::
 ::: column
 ```{r}
@@ -612,7 +607,7 @@ tm_shape(AOA$AOA) +
 ::::
 
 ::: aside
-Meyer and Pebesma (2021)
+AoA nie odpowiada więc na pytanie, **jak dobry jest model**, lecz na pytanie, **gdzie można sensownie ufać jego predykcjom**.
 :::
 
 ## Porównanie: walidacja błędna vs poprawna
@@ -633,7 +628,7 @@ tm_shape(pred_rf) +
 
 *RMSE z walidacji losowej / skupionych danych testowych*
 :::
-::: {.column width="50%"}
+::: {.column width="50%" .fragment}
 **Bardziej wiarygodna ocena modelu:**
 
 ```{r}
@@ -660,33 +655,36 @@ tm_shape(pred_rf_knndm_aoa) +
 
 [`r round(global_validation(model_rf_knndm)[[1]], 2)`]{style="font-size: 160%;"}
 
-*RMSE z walidacji adaptacyjnej względem domeny predykcji (kNNDM); AoA dodatkowo ogranicza interpretację mapy do obszarów wspartych danymi treningowymi*
+*RMSE z walidacji kNNDM; AoA dodatkowo ogranicza interpretację mapy do obszarów wspartych danymi treningowymi*
 :::
 ::::
 
+::: {.fragment}
 Do tej pory mówiliśmy głównie o tym, jak modelować **wartości** w przestrzeni.
-Teraz przechodzimy do pytania, jak opisywać i porównywać same **wzorce przestrzenne**.
+Teraz przechodzimy do kwestii, jak opisywać i porównywać same **wzorce przestrzenne**.
+:::
+
 
 # Teoria informacji a geografia {data-background-image="figs/cover.png" data-background-opacity="0.3"}
 
 ## Dlaczego wzorce są ważne?
 
-Odkrywanie i opisywanie wzorców (*patterns*) to kluczowy element analizy przestrzennej.
+Odkrywanie i opisywanie wzorców (ang. *patterns*) to kluczowy element analizy przestrzennej.
 Wzorce są powiązane z procesami naturalnymi i społecznymi.
-
-W moich badaniach interesuje mnie to, jak takie wzorce opisywać ilościowo — najpierw pojedynczymi miarami, a potem pełniejszymi reprezentacjami umożliwiającymi ich porównywanie.
 
 :::: {.columns}
 ::: {.column width="33%"}
 [Podatność krajobrazów leśnych na ekspansję rolnictwa]{style="font-size: 0.8em"}
-```{r, out.width="78%"}
+```{r}
+#| out-width: 68%
 knitr::include_graphics("figs/wietnam-paper.png")
 ```
 [*Bourgoin i in., 2020, [10.1016/j.jag.2019.101958](https://doi.org/10.1016/j.jag.2019.101958)*]{style="font-size: 0.6em"}
 :::
 ::: {.column width="33%"}
-[Kwantyfikacja segregacji rasowej i różnorodności]{style="font-size: 0.8em"}
-```{r, out.width="85%"}
+[Kwantyfikacja różnorodności i segregacji rasowej]{style="font-size: 0.8em"}
+```{r}
+#| out-width: 85%
 knitr::include_graphics("figs/raceland-fig.png")
 ```
 [*Dmowska i in., 2020, [10.1016/j.apgeog.2020.102239](https://doi.org/10.1016/j.apgeog.2020.102239)*]{style="font-size: 0.6em"}
@@ -694,19 +692,23 @@ knitr::include_graphics("figs/raceland-fig.png")
 ::: {.column width="33%"}
 [Analiza obrazów histologicznych (np. rak wątroby)]{style="font-size: 0.8em"}
 ```{r, out.width="100%"}
+#| out-width: 100%
 knitr::include_graphics("figs/histo-paper.png")
 ```
 [*Kendall i in., 2020, [10.1038/s41598-020-74691-9](https://doi.org/10.1038/s41598-020-74691-9)*]{style="font-size: 0.6em"}
 :::
 ::::
 
+**Problem: Jak opisać i porównać te wzorce ilościowo?**
+<!-- W moich badaniach interesuje mnie to, jak takie wzorce opisywać ilościowo — najpierw pojedynczymi miarami, a potem pełniejszymi reprezentacjami umożliwiającymi ich porównywanie. -->
+
 ## Sygnatury przestrzenne
 
-Większość metryk krajobrazowych to pojedyncze liczby przedstawiające specyficzne cechy lokalnego krajobrazu.
+<!-- Większość metryk krajobrazowych to pojedyncze liczby przedstawiające specyficzne cechy lokalnego krajobrazu. -->
 
-**Sygnatury przestrzenne** (ang. *spatial signatures*), z drugiej strony, są wieloelementowymi reprezentacjami kompozycji i konfiguracji krajobrazu.
+**Sygnatury przestrzenne** (ang. *spatial signatures*) są wieloelementowymi reprezentacjami kompozycji i konfiguracji krajobrazu.
 
-Punktem wyjścia jest **macierz współwystępowania**, która opisuje lokalną strukturę sąsiedztwa kategorii.
+Punktem wyjścia jest **macierz współwystępowania** (ang. *co-occurrence matrix* (*coma*)), która opisuje lokalną strukturę sąsiedztwa kategorii.
 
 :::: {.columns}
 ::: {.column width='35%'}
@@ -716,14 +718,16 @@ Punktem wyjścia jest **macierz współwystępowania**, która opisuje lokalną 
 library(tmap)
 lc_palette = c("#FFFF64", "#006400", "#966400", "#BE9600")
 landscapes = terra::rast("data/landscapes.grd")
-tm_shape(landscapes[[1]]) +
-  tm_raster(palette = lc_palette, style = "cat", legend.show = FALSE) +
+tmc = tm_shape(landscapes[[1]]) +
+  tm_raster(col.scale = tm_scale_categorical(values = lc_palette, labels = c("rolnictwo", "las")), 
+            col.legend = tm_legend(title = "")) +
   tm_layout(frame = FALSE)
+tmc
 ```
 :::
 ::: {.column width='65%'}
 
-Podstawowa sygnatura to **macierz współwystępowania** (ang. *co-occurrence matrix* (*coma*)):
+*macierz współwystępowania**:
 ```{r}
 coma1 = comat::get_coma(as.matrix(landscapes[[1]], wide = TRUE))
 colnames(coma1) = c("rolnictwo", "las")
@@ -745,80 +749,78 @@ To przejście jest kluczowe: od obiektu przestrzennego przechodzimy do reprezent
 ```{r}
 #| fig-width: 6
 #| fig-height: 6
-tm_shape(landscapes[[1]]) +
-  tm_raster(palette = lc_palette, style = "cat", legend.show = FALSE) +
-  tm_layout(frame = FALSE)
+tmc
 ```
 :::
 ::: {.column width='65%' .incremental}
 - **Wektor współwystępowania** (ang. *co-occurrence vector (cove)*):
 ```{r}
-knitr::kable(comat::get_cove(coma1, ordered = TRUE)) |> 
-  kableExtra::kable_styling(font_size = 16)
+knitr::kable(comat::get_cove(coma1, ordered = TRUE))
 ```
 - **Znormalizowany wektor współwystępowania** (ang. *normalized co-occurrence vector*):
 ```{r}
-knitr::kable(comat::get_cove(coma1, ordered = FALSE, normalization = "pdf"), digits = 4) |> 
-  kableExtra::kable_styling(font_size = 16)
+knitr::kable(comat::get_cove(coma1, ordered = FALSE, normalization = "pdf"), digits = 4)
 ```
 :::
 ::::
 
 ## Miary z macierzy współwystępowania: entropia
 
-**Marginalna entropia [H(X)]** – różnorodność tematyczna (kompozycja kategorii):
+**Entropia brzegowa [H(X)]** – różnorodność tematyczna (kompozycja kategorii):
 
 $$H(X) = -\sum_{i=1}^{n} p_i \log_2 p_i$$
 
 gdzie $p_i$ to proporcja kategorii $i$ w krajobrazie.
 
-:::: {.columns}
-::: {.column width="50%"}
+:::: {.columns .fragment}
+::: {.column width="60%"}
 ```{r}
-#| fig-cap: "Marginalna entropia [H(x)]"
+#| fig-height: 6
 library(tmap)
 library(landscapemetrics)
 lc_palette = c("#FFFF64", "#006400", "#966400", "#BE9600")
 landscapes = terra::rast("data/landscapes.grd")
-tm_shape(landscapes) +
-  tm_raster(palette = lc_palette, style = "cat", legend.show = FALSE) +
-  tm_facets(free.scales = FALSE, ncol = 3) +
+tmc2 = tm_shape(landscapes) +
+  tm_raster(col.scale = tm_scale_categorical(values = lc_palette, labels = c("rolnictwo", "las", "tereny zakrzewione", "nieużytki")), 
+            col.legend = tm_legend(title = "")) +
+  tm_facets(free.scales = FALSE, ncol = 3)
+tmc2 +
   tm_layout(panel.labels = round(lsm_l_ent(landscapes)$value, 2), 
             panel.label.size = 2,
-            main.title = "Marginal entropy [H(x)]")
+            main.title = "Entropia brzegowa [H(x)]")
 ```
 :::
-::: {.column width="50%"}
-Wyższa wartość = większa różnorodność kategorii.
+::: {.column width="40%"}
+<br><br><br><br><br><br><br>
+Wyższa wartość = większa różnorodność kategorii
 
 W teorii informacji: miara niepewności.
 
-W geografii: prosta miara kompozycji wzorca.
+W geografii: miara kompozycji wzorca.
 :::
 ::::
 
 ## Miary z macierzy współwystępowania: konfiguracja
 
-**Informacja wzajemna** – ile informacji niesie sąsiedztwo:
+**Informacja wzajemna** –- ile informacji niesie sąsiedztwo:
 
 $$I(X;Y) = H(X) - H(X|Y) = \sum_{i,j} p_{ij} \log_2 \frac{p_{ij}}{p_i p_j}$$
 
 **Względna informacja wzajemna** (znormalizowana): $U = \frac{I(Y,X)}{H(X)} \in [0,1]$
 
-:::: {.columns}
-::: {.column width="50%"}
+:::: {.columns .fragment}
+::: {.column width="60%"}
 ```{r}
-#| fig-cap: "Względna informacja wzajemna [U]"
+#| fig-height: 6
 rel_mut_inf = lsm_l_mutinf(landscapes)$value / lsm_l_ent(landscapes)$value
-tm_shape(landscapes) +
-  tm_raster(palette = lc_palette, style = "cat", legend.show = FALSE) +
-  tm_facets(free.scales = FALSE, ncol = 3) +
+tmc2 +
   tm_layout(panel.labels = round(rel_mut_inf, 2), 
             panel.label.size = 2,
-            main.title = "Relative mutual information [U]")
+            main.title = "Względna informacja wzajemna [U]")
 ```
 :::
-::: {.column width="50%"}
+::: {.column width="40%"}
+<br><br><br><br><br><br><br>
 $U \approx 0$: losowe rozmieszczenie
 
 $U \approx 1$: silna autokorelacja przestrzenna
@@ -829,7 +831,7 @@ Opisuje konfigurację wzorca, ale nadal sprowadza ją do jednej liczby.
 
 ## Idea PBSA: Podziel i opisz
 
-Podejście PBSA (*pattern-based spatial analysis*) polega na:
+Podejście PBSA (ang. *pattern-based spatial analysis*) polega na:
 
 1. Podziale danych na dużą liczbę mniejszych obszarów (lokalnych krajobrazów).
 2. Reprezentacji każdego obszaru za pomocą **sygnatury przestrzennej** (np. wektora współwystępowania).
@@ -841,35 +843,38 @@ W ten sposób przechodzimy od opisu pojedynczego wzorca do analizy całych zbior
 knitr::include_graphics("figs/ng_grid.png")
 ```
 
-. . .
-
+::: {.fragment}
 Pozwala to na: **wyszukiwanie podobieństw**, **wykrywanie zmian**, **grupowanie (clustering)** i **segmentację**.
+:::
 
-## PBSA w praktyce: Zastosowania
+## PBSA w praktyce
 
 :::: {.columns}
 ::: {.column width="33%"}
-**Wyszukiwanie (1-to-many)**
+**Wyszukiwanie** (1-do-wielu)
 Znajdź obszary o rzeźbie terenu podobnej do Suwalszczyzny.
 ```{r, out.width="100%"}
 knitr::include_graphics("figs/lsp_search4.png")
 ```
 :::
 ::: {.column width="33%"}
-**Porównywanie (1-to-1)**
+**Porównywanie** (1-do-1)
 Ilościowa ocena zmian struktury (np. wylesianie Amazonii).
 ```{r, out.width="100%"}
 knitr::include_graphics("figs/lsp_compare2.png")
 ```
 :::
 ::: {.column width="33%"}
-**Grupowanie (many-to-many)**
-Regionalizacja kontynentów na podstawie wzorców pokrycia terenu.
+**Grupowanie** (wiele-do-wielu)
+Regionalizacja na podstawie wzorców pokrycia terenu.
 ```{r, out.width="100%"}
 knitr::include_graphics("figs/lsp_cluster4.png")
 ```
 :::
 ::::
+
+
+
 
 # Co dalej? Nowe horyzonty
 
@@ -877,28 +882,26 @@ knitr::include_graphics("figs/lsp_cluster4.png")
 
 :::: {.columns}
 ::: {.column width="58%"}
-Coraz częściej celem nie jest już tylko analiza pojedynczych zmiennych, ale budowa **dobrych reprezentacji przestrzeni**.
+Coraz częściej celem nie jest już tylko analiza pojedynczych zmiennych, lecz tworzenie **solidnych i użytecznych reprezentacji przestrzeni**.
 
 ::: {.incremental}
-- **Embeddingi i foundation models**: uczą się uniwersalnych reprezentacji obrazów satelitarnych i danych wieloźródłowych
-- **Grafowe sieci neuronowe**: modelują obiekty przestrzenne wraz z relacjami sąsiedztwa i przepływu
-- **Globalne siatki dyskretne**: oferują nowy sposób reprezentacji świata w skali globalnej
-- **Wspólny mianownik**: przejście od pojedynczych wartości do struktur, relacji i reprezentacji
+- **Embeddingi i modele fundamentalne (foundation models)** próbują tworzyć uniwersalne reprezentacje obrazów satelitarnych oraz danych wieloźródłowych
+- **Grafowe sieci neuronowe** pozwalają modelować obiekty przestrzenne wraz z relacjami sąsiedztwa
+- **Globalne siatki dyskretne** oferują nowe podejście do reprezentacji danych przestrzennych
+- **Wspólny mianownik**: przejście od pojedynczych wartości do struktur i relacji
 :::
 :::
 ::: {.column width="42%"}
-Z matematycznego punktu widzenia szczególnie ważne stają się:
+Z matematycznego punktu widzenia szczególnego znaczenia nabierają:
 
-- geometria i topologia danych
-- uczenie reprezentacji
-- analiza grafów
-- miary podobieństwa i odległości
+- geometria i topologia danych  
+- uczenie reprezentacji  
+- analiza grafów  
+- miary podobieństwa i odległości  
 
-To właśnie tu geografia i matematyka spotykają się dziś szczególnie intensywnie.
+To właśnie na tym styku geografia i matematyka spotykają się dziś szczególnie intensywnie.
 :::
 ::::
-
-
 
 # Podsumowanie
 
@@ -934,3 +937,7 @@ knitr::include_graphics("figs/EN-Funded by the EU-POS.jpg")
 ```
 :::
 ::::
+
+```{r}
+knitr::include_graphics("figs/cover2.png")
+```
