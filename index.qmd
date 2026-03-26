@@ -11,7 +11,7 @@ title-slide-attributes:
 format:
   n3-revealjs:
     footer: "[jakubnowosad.com/horyzontymatematyki2026](https://jakubnowosad.com/horyzontymatematyki2026)"
-    # slide-number: false
+    slide-number: false
     progress: false
     margin: 0.05
     menu: false
@@ -100,7 +100,7 @@ knitr::include_graphics("figs/history-pole.jpg")
 
 <!-- Geografia staje się zinstytucjonalizowaną dyscypliną: szkolną, akademicką i badawczą. -->
 
-## Kryzys tożsamości geografii
+## Kryzys tożsamości geografii {visibility="hidden"}
 
 - Utrata dotychczasowej podstawowej funkcji poznawczej, polegającej na rozszerzaniu tzw. horyzontu geograficznego
 - Wyzwania w zdefiniowaniu celu i zakresu geografii
@@ -145,10 +145,10 @@ knitr::include_graphics("figs/ib-landscape.jpeg")
 :::
 ::: {.column width="45%"}
 ::: {.incremental}
-Geografia:
+**Geografia:**
 
 - stawia pytania badawcze i testuje hipotezy
-- korzysta z danych terenowych, satelitarnych i społecznych
+- korzysta z **danych terenowych, satelitarnych i społecznych**
 - używa metod ilościowych, modeli i algorytmów
 - coraz silniej łączy geografię z fizyką, chemią, **matematyką**, statystyką i informatyką
 :::
@@ -173,13 +173,13 @@ knitr::include_graphics("figs/history-first.jpg")
 ::: {.column width="70%"}
 ```{r}
 #| fig-align: center
-#| out-width: 60%
+#| out-width: 55%
 knitr::include_graphics("figs/data-earth.gif")
 ```
 
 ```{r}
 #| fig-align: center
-#| out-width: 60%
+#| out-width: 55%
 knitr::include_graphics("figs/data-micro.jpg")
 ```
 :::
@@ -196,15 +196,11 @@ Współczesna geografia korzysta z bardzo różnych źródeł danych — od obse
 #| out-width: 60%
 knitr::include_graphics("figs/data-sen1.jpg")
 ```
-*Misje satelitarne:* Landsat, MODIS, Sentinel, itd.
-
-*Typ misji:* publiczna/komercyjna
-
-*Typ sensora:* pasywny/aktywny
-
-*Typ danych:* optyczne/radarowe, itd.
-
-*Rozdzielczość:* przestrzenna/czasowa/spektralna
+- *Misje satelitarne:* Landsat, MODIS, Sentinel, itd.
+- *Typ misji:* publiczna/komercyjna
+- *Typ sensora:* pasywny/aktywny
+- *Typ danych:* optyczne/radarowe, itd.
+- *Rozdzielczość:* przestrzenna/czasowa/spektralna
 :::
 ::: {.column width="50%"}
 ```{r}
@@ -250,7 +246,7 @@ knitr::include_graphics("figs/data-climpeat.jpg")
 
 :::
 ::: {.column width="68%"}
-*fot. Maurycy Żarczyński*
+[*fot. Maurycy Żarczyński*]{style="font-size: 70%;"}
 ```{r}
 #| fig-align: center
 #| out-width: 100%
@@ -475,7 +471,7 @@ south_america = rnaturalearth::ne_countries(continent = "South America", returnc
 tm_shape(south_america) +
   tm_borders() +
   tm_shape(splotdata) +
-  tm_symbols(fill = "Species_richness", size = 0.5)
+  tm_symbols(fill = "Species_richness", size = 0.5, fill.legend = tm_legend(title = "Bogactwo gatunkowe"))
 ```
 
 :::
@@ -514,9 +510,12 @@ tm_shape(predictors) +
   tm_dots(shape = 2, col = "black", size = 0.2)
 ```
 
+::: {.fragment}
+
 **Problem**: Te metody zakładają niezależność obserwacji -- każdy punkt jest traktowany jako niezależny.
 
 *W praktyce ignorowanie autokorelacji przestrzennej i niereprezentatywności próby prowadzi do nadmiernego dopasowania modelu i błędnych generalizacji.*
+:::
 
 ## Rozkład przestrzenny danych
 
@@ -620,7 +619,7 @@ AoA nie odpowiada więc na pytanie, **jak dobry jest model**, lecz na pytanie, *
 #| fig-height: 6
 tm_shape(pred_rf) +
   tm_raster(col.scale = tm_scale_continuous(values = "spectral", midpoint = 0),
-            col.legend = tm_legend(title = "Species richness")) +
+            col.legend = tm_legend(title = "Bogactwo gatunkowe", frame = FALSE)) +
   tm_title("Random Forest (bez AoA)")
 ```
 
@@ -649,7 +648,7 @@ pred_rf_knndm = terra::predict(predictors, model_rf_knndm, na.rm = TRUE)
 pred_rf_knndm_aoa = mask(pred_rf_knndm, AOA[[3]], maskvalues = 0)
 tm_shape(pred_rf_knndm_aoa) +
   tm_raster(col.scale = tm_scale_continuous(values = "spectral", midpoint = 0),
-            col.legend = tm_legend(title = "Species richness")) +
+            col.legend = tm_legend(title = "Bogactwo gatunkowe", frame = FALSE)) +
   tm_title("Random Forest (z AoA)")
 ```
 
@@ -708,7 +707,7 @@ knitr::include_graphics("figs/histo-paper.png")
 
 **Sygnatury przestrzenne** (ang. *spatial signatures*) są wieloelementowymi reprezentacjami kompozycji i konfiguracji krajobrazu.
 
-Punktem wyjścia jest **macierz współwystępowania** (ang. *co-occurrence matrix* (*coma*)), która opisuje lokalną strukturę sąsiedztwa kategorii.
+Punktem wyjścia jest **macierz współwystępowania** (ang. *co-occurrence matrix*), która opisuje lokalną strukturę sąsiedztwa kategorii.
 
 :::: {.columns}
 ::: {.column width='35%'}
@@ -753,7 +752,7 @@ tmc
 ```
 :::
 ::: {.column width='65%' .incremental}
-- **Wektor współwystępowania** (ang. *co-occurrence vector (cove)*):
+- **Wektor współwystępowania** (ang. *co-occurrence vector*):
 ```{r}
 knitr::kable(comat::get_cove(coma1, ordered = TRUE))
 ```
@@ -873,22 +872,18 @@ knitr::include_graphics("figs/lsp_cluster4.png")
 :::
 ::::
 
-
-
-
 # Co dalej? Nowe horyzonty
 
 ## Co dalej? Nowe horyzonty
 
 :::: {.columns}
 ::: {.column width="58%"}
-Coraz częściej celem nie jest już tylko analiza pojedynczych zmiennych, lecz tworzenie **solidnych i użytecznych reprezentacji przestrzeni**.
+Coraz częściej celem nie jest już tylko analiza pojedynczych zmiennych, lecz tworzenie **wiarygodnych i użytecznych reprezentacji przestrzeni**.
 
 ::: {.incremental}
-- **Embeddingi i modele fundamentalne (foundation models)** próbują tworzyć uniwersalne reprezentacje obrazów satelitarnych oraz danych wieloźródłowych
+- **Embeddingi i modele fundamentalne (ang. *foundation models*)** próbują tworzyć uniwersalne reprezentacje obrazów satelitarnych oraz danych wieloźródłowych
 - **Grafowe sieci neuronowe** pozwalają modelować obiekty przestrzenne wraz z relacjami sąsiedztwa
 - **Globalne siatki dyskretne** oferują nowe podejście do reprezentacji danych przestrzennych
-- **Wspólny mianownik**: przejście od pojedynczych wartości do struktur i relacji
 :::
 :::
 ::: {.column width="42%"}
