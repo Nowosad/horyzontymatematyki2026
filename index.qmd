@@ -519,12 +519,12 @@ tm_shape(predictors) +
 
 ## Rozkład przestrzenny danych
 
-Dane treningowe w badaniach przyrodniczych są często zaagregowane przestrzennie.
+Dane w badaniach przyrodniczych są często zaagregowane przestrzennie.
 
 - Niektóre obszary są daleko od punktów treningowych
 - Wartości predyktorów dla opróbowanych lokalizacji mogą drastycznie różnić się od tych dla obszarów, które chcemy prognozować
 
-Dane testowe również skupione przestrzennie –- nie reprezentują całego obszaru, który chcemy prognozować.
+<!-- Dane testowe również skupione przestrzennie –- nie reprezentują całego obszaru, który chcemy prognozować. -->
 
 :::: columns
 ::: {.column width="30%"}
